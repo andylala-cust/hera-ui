@@ -1,0 +1,43 @@
+{
+  "name": "hera-ui",
+  "version": "1.0.0",
+  "description": "A Component Library for Vue.js",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npx vue-cli-service serve examples/src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andylala-cust/hera-ui.git"
+  },
+  "keywords": [
+    "heraui",
+    "vue",
+    "components",
+    "uikit"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.4",
+    "@vue/cli-plugin-eslint": "~4.5.4",
+    "@vue/cli-service": "~4.5.4",
+    "babel-eslint": "^10.1.0",
+    "cli-color": "^2.0.1",
+    "core-js": "^3.6.5",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "file-save": "^0.2.0",
+    "json-templater": "^1.0.4",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "uppercamelcase": "^1.1.0",
+    "vue": "^2.6.11",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "author": "tangyingrui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andylala-cust/hera-ui/issues"
+  },
+  "homepage": "https://github.com/andylala-cust/hera-ui#readme"
+}
