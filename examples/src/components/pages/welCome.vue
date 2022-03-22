@@ -12,16 +12,21 @@
             <div class="desc">
                 <h4>Hera Ui</h4>
                 <p>A Vue.js UI Kit for Web</p>
-                <div class="btn">起步</div>
+                <div class="btn" @click="handleClick">起步</div>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-    export default {
-        name: "welCome"
+export default {
+    name: "welCome",
+    methods: {
+        handleClick () {
+            this.$router.push('/doc')
+        }
     }
+}
 </script>
 
 <style scoped lang="less">
