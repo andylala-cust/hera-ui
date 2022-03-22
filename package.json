@@ -32,6 +32,7 @@
     "less-loader": "^5.0.0",
     "uppercamelcase": "^1.1.0",
     "vue": "^2.6.11",
+    "vue-router": "^3.5.1",
     "vue-template-compiler": "^2.6.11"
   },
   "author": "tangyingrui",
@@ -39,5 +40,15 @@
   "bugs": {
     "url": "https://github.com/andylala-cust/hera-ui/issues"
   },
-  "homepage": "https://github.com/andylala-cust/hera-ui#readme"
+  "homepage": "https://github.com/andylala-cust/hera-ui#readme",
+  "vue": {
+    "configureWebpack": {
+      "resolve": {
+        "alias": {
+          "main": "../../",
+          "@": "/examples/src"
+        }
+      }
+    }
+  }
 }

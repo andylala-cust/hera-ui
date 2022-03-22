@@ -56,7 +56,7 @@ fileSave(path.join(__dirname, '../../components.json'))
     .write(JSON.stringify(componentsFile, null, '  '), 'utf8')
     .end('\n')
 
-// 添加到 index.scss
+// 添加到 index.less
 const lessPath = path.join(__dirname, '../../packages/theme-chalk/src/index.less')
 const lessImportText = `${fs.readFileSync(lessPath)}@import "./${componentname}.less";`
 fileSave(lessPath)

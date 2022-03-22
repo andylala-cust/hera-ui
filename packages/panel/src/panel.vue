@@ -5,6 +5,9 @@
             <template slot="icon">
                 <slot name="icon"></slot>
             </template>
+            <template slot="headerRight">
+                <slot name="headerRight"></slot>
+            </template>
         </he-panel-header>
         <he-panel-content>
             <slot name="content"></slot>
