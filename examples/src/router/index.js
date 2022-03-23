@@ -19,17 +19,17 @@ export default new Router({
             path: '/doc',
             name: 'doc',
             component: doc,
-            redirect: '/doc/panel',
+            redirect: '/doc/icon',
             children: [
-                {
-                    path: '/doc/panel',
-                    name: 'panelPage',
-                    component: panelPage
-                },
                 {
                     path: '/doc/icon',
                     name: 'iconPage',
                     component: iconPage
+                },
+                {
+                    path: '/doc/panel',
+                    name: 'panelPage',
+                    component: panelPage
                 }
             ]
         }

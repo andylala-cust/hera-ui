@@ -5,13 +5,8 @@
 </template>
 
 <script>
-import welCome from "./components/pages/welCome"
-
 export default {
-  name: 'App',
-  components: {
-    welCome
-  }
+  name: 'App'
 }
 </script>
 
