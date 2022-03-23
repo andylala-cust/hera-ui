@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Welcome from '@/components/pages/welCome'
 import doc from '@/components/pages/doc'
 import panelPage from '@/components/pages/panelPage'
+import iconPage from '@/components/pages/iconPage'
 
 Vue.use(Router)
 
@@ -24,6 +25,11 @@ export default new Router({
                     path: '/doc/panel',
                     name: 'panelPage',
                     component: panelPage
+                },
+                {
+                    path: '/doc/icon',
+                    name: 'iconPage',
+                    component: iconPage
                 }
             ]
         }

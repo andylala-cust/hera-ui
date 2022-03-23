@@ -1,12 +1,14 @@
 <template>
     <div class="doc">
         <div class="nav">
-            <ul class="list">
-                <li
-                    v-for="(list, index) in routerList"
+            <div class="list">
+                <router-link
+                    v-for="(route, index) in routerList"
                     :key="index"
-                >{{list.name}}</li>
-            </ul>
+                    :to="route.value"
+                    exact
+                >{{route.name}}</router-link>
+            </div>
         </div>
         <div class="content">
             <router-view></router-view>
@@ -48,15 +50,23 @@ export default {
             width: 1px;
             background-color: #cbcbe1;
         }
-        li{
-            padding: 0 20px;
-            cursor: pointer;
+        a{
+            display: block;
+            height: 40px;
+            padding-left: 20px;
             color: #444;
+            line-height: 40px;
             font-size: 14px;
-            line-height: 34px;
-            transition: all .3s;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-weight: 400;
+            text-decoration: none;
             &:hover{
-                background-color: #ececf7;
+                color: #1b63d9;
+            }
+            &.router-link-active{
+                background-color: #f7f7fc;
                 color: #1b63d9;
             }
         }
