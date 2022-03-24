@@ -10,7 +10,10 @@
                     <slot name="icon"></slot>
                 </i>
                 <p v-if="isMore" :class="[(isIcon && isMore) && 'is-more']">
-                    <span>更多></span>
+                    <span>更多</span>
+                    <he-icon
+                        type="arrow-right"
+                    ></he-icon>
                 </p>
             </div>
             <slot v-if="$slots.headerRight" name="headerRight"></slot>

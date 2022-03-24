@@ -7,12 +7,14 @@ import 'main/packages/theme-chalk/src/index.less'
 import './less/reset.less'
 import VueHighlightJS from 'vue-highlightjs'
 import 'highlight.js/styles/color-brewer.css'
-
-Vue.use(VueHighlightJS)
+import VueClipboard from 'vue-clipboard2'
 
 Vue.config.productionTip = false
+VueClipboard.config.autoSetContainer = true
 
 Vue.use(HeraUi)
+Vue.use(VueHighlightJS)
+Vue.use(VueClipboard)
 
 Vue.component('codeDemo', codeDemo)
 

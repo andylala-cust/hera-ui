@@ -1,4 +1,4 @@
-import Icon from './src/main'
+import Icon from './src/main.jsx'
 
 Icon.install = function(Vue) {
   Vue.component(Icon.name, Icon)

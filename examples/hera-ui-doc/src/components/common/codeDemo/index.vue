@@ -7,6 +7,7 @@
             <slot name="code"></slot>
         </div>
         <div class="footer">
+            <span style="margin-right: 12px" @click="handleCopy">复制代码</span>
             <span @click="handleFold">{{foldText}}</span>
         </div>
     </div>
@@ -26,6 +27,13 @@ export default {
         }
     },
     methods: {
+        handleCopy () {
+            this.$copyText(this.$refs.code.textContent).then(function () {
+                alert('复制成功')
+            }, function () {
+                alert('复制失败')
+            })
+        },
         handleFold () {
             this.toggleFold = !this.toggleFold
             const { code } = this.$refs

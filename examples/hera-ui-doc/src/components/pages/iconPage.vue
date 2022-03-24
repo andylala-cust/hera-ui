@@ -44,6 +44,20 @@
 &gt;&lt;/he-icon&gt;</code></pre>
             </template>
         </codeDemo>
+        <h3>PDF下载图标</h3>
+        <codeDemo>
+            <template slot="demo">
+                <he-icon
+                    type="pdf-download"
+                    class="icon"
+                ></he-icon>
+            </template>
+            <template slot="code">
+                <pre v-highlightjs><code class="html">&lt;he-icon
+    type="pdf-download"
+&gt;&lt;/he-icon&gt;</code></pre>
+            </template>
+        </codeDemo>
         <h3>图片分析图标</h3>
         <codeDemo>
             <template slot="demo">
@@ -83,6 +97,20 @@
             <template slot="code">
                 <pre v-highlightjs><code class="html">&lt;he-icon
     type="arrow-right"
+&gt;&lt;/he-icon&gt;</code></pre>
+            </template>
+        </codeDemo>
+        <h3>提示</h3>
+        <codeDemo>
+            <template slot="demo">
+                <he-icon
+                    type="tip"
+                    class="icon"
+                ></he-icon>
+            </template>
+            <template slot="code">
+                <pre v-highlightjs><code class="html">&lt;he-icon
+    type="tip"
 &gt;&lt;/he-icon&gt;</code></pre>
             </template>
         </codeDemo>
