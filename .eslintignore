@@ -1,0 +1,5 @@
+*.sh
+node_modules
+lib
+*.md
+*.less
