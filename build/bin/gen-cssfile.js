@@ -20,7 +20,7 @@ themes.forEach((theme) => {
   // var indexContent = isLess ? '@import "./base.less";\n' : '@import "./base.css";\n';
   var indexContent = '';
   Components.forEach(function(key) {
-    if (['icon', 'option', 'option-group'].indexOf(key) > -1) return;
+    // if (['option', 'option-group'].indexOf(key) > -1) return;
     var fileName = key + (isLess ? '.less' : '.css');
     indexContent += '@import "./' + fileName + '";\n';
     var filePath = path.resolve(basepath, theme, 'src', fileName);
