@@ -1,0 +1,6 @@
+{
+  "icon": "./packages/icon/index.js",
+  "panel": "./packages/panel/index.js",
+  "panel-content": "./packages/panel-content/index.js",
+  "panel-header": "./packages/panel-header/index.js"
+}
