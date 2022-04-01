@@ -9,6 +9,11 @@
 
 > A Vue.js UI Kit for Web.
 
+## Links
+- Homepage and documentation
+  - [Docs](https://andylala-cust.github.io/hera-ui/#/)
+
+
 ## Install
 ```shell
 npm install hera-ui -S
