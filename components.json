@@ -2,5 +2,6 @@
   "icon": "./packages/icon/index.js",
   "panel": "./packages/panel/index.js",
   "panel-content": "./packages/panel-content/index.js",
-  "panel-header": "./packages/panel-header/index.js"
+  "panel-header": "./packages/panel-header/index.js",
+  "virtual-list": "./packages/virtual-list/index.js"
 }

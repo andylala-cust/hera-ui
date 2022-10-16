@@ -32,26 +32,24 @@
     p{
       display: flex;
       align-items: center;
-      padding-left: 24px;
+      margin-left: 24px;
       font-size: 14px;
+      cursor: pointer;
+      &:hover{
+        color: @mainColor;
+      }
       &.is-more{
         position: relative;
         &:before{
           content: '';
           position: absolute;
-          left: 12px;
+          left: -12px;
           top: 50%;
           display: block;
           width: 1px;
           height: 12px;
           margin-top: -6px;
           background-color: @borderColor;
-        }
-      }
-      span{
-        cursor: pointer;
-        &:hover{
-          color: @mainColor;
         }
       }
     }

@@ -1,6 +1,6 @@
 <template>
     <div class="he-panel">
-        <he-panel-header>
+        <he-panel-header @moreClick="moreClick" @iconClick="iconClick">
             <slot name="header"></slot>
             <template slot="icon">
                 <slot name="icon"></slot>
@@ -37,6 +37,14 @@ export default {
         isMore: {
             type: Boolean,
             default: false
+        }
+    },
+    methods: {
+        moreClick () {
+            this.$emit('moreClick')
+        },
+        iconClick () {
+            this.$emit('iconClick')
         }
     }
 }
