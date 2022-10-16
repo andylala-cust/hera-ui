@@ -10,9 +10,9 @@
                 ></he-panel>
             </template>
             <template slot="code">
-                <pre v-highlightjs><code class="html">&lt;he-panel
+                <highlightjs language='html' code='<he-panel
     title="基础面板"
-&gt;&lt;/he-panel&gt;</code></pre>
+></he-panel>' />
             </template>
         </codeDemo>
         <h3>带图标面板</h3>
@@ -24,10 +24,10 @@
                 ></he-panel>
             </template>
             <template slot="code">
-                <pre v-highlightjs><code class="html">&lt;he-panel
+                <highlightjs language='html' code='<he-panel
     title="带图标面板"
     is-icon
-&gt;&lt;/he-panel&gt;</code></pre>
+></he-panel>' />
             </template>
         </codeDemo>
         <h3>带图标及更多面板</h3>
@@ -40,11 +40,11 @@
                 ></he-panel>
             </template>
             <template slot="code">
-               <pre v-highlightjs><code class="html">&lt;he-panel
+                <highlightjs language='html' code='<he-panel
     title="带图标及更多面板"
     is-icon
     is-more
-&gt;&lt;/he-panel&gt;</code></pre>
+></he-panel>' />
             </template>
         </codeDemo>
         <h3>自定义头部面板</h3>
@@ -59,13 +59,13 @@
                 </he-panel>
             </template>
             <template slot="code">
-               <pre v-highlightjs><code class="html">&lt;he-panel
+                <highlightjs language='html' code='<he-panel
     title="自定义头部面板"
-&gt;
-    &lt;div class="title" slot="header"&gt;
-        &lt;h4&gt;自定义头部面板&lt;/h4&gt;
-    &lt;/div&gt;
-&lt;/he-panel&gt;</code></pre>
+>
+    <div class="title" slot="header">
+        <h4>自定义头部面板</h4>
+    </div>
+</he-panel>' />
             </template>
         </codeDemo>
         <h3>其他面板</h3>
@@ -84,17 +84,17 @@
                 </he-panel>
             </template>
             <template slot="code">
-               <pre v-highlightjs><code class="html">&lt;he-panel
+                <highlightjs language='html' code='<he-panel
     title="其他面板"
     is-icon
-&gt;
-    &lt;p slot="headerRight" style="font-size: 14px;color: #474762;"&gt;
-        &lt;span&gt;更多&lt;/span&gt;
-        &lt;he-icon
+>
+    <p slot="headerRight" style="display: flex;align-items: center;font-size: 14px;color: #474762;">
+        <span>更多</span>
+        <he-icon
             type="arrow-right"
-        &gt;&lt;/he-icon&gt;
-    &lt;/p&gt;
-&lt;/he-panel&gt;</code></pre>
+        ></he-icon>
+    </p>
+</he-panel>' />
             </template>
         </codeDemo>
     </div>
