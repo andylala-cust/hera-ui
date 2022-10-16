@@ -6,10 +6,10 @@
             </div>
             <div v-if="isIcon && !$slots.headerRight" class="icon-wrap">
                 <i>
-                    <he-icon type="download" v-if="!$slots.icon"></he-icon>
+                    <he-icon @click.native="handleIconClick" type="download" v-if="!$slots.icon"></he-icon>
                     <slot name="icon"></slot>
                 </i>
-                <p v-if="isMore" :class="[(isIcon && isMore) && 'is-more']">
+                <p @click="handleMoreClick" v-if="isMore" :class="[(isIcon && isMore) && 'is-more']">
                     <span>更多</span>
                     <he-icon
                         type="arrow-right"
@@ -25,6 +25,14 @@
 <script>
 export default {
     name: "HePanelHeader",
-    inject: ['title', 'isIcon', 'isMore']
+    inject: ['title', 'isIcon', 'isMore'],
+    methods: {
+        handleIconClick () {
+            this.$emit('iconClick')
+        },
+        handleMoreClick () {
+            this.$emit('moreClick')
+        }
+    }
 }
 </script>

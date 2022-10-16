@@ -11,9 +11,10 @@
                 ></he-icon>
             </template>
             <template slot="code">
-                <pre v-highlightjs><code class="html">&lt;he-icon
+                <highlightjs language='html' code='<he-icon
     type="download"
-&gt;&lt;/he-icon&gt;</code></pre>
+    class="icon"
+></he-icon>' />
             </template>
         </codeDemo>
         <h3>表格下载图标</h3>
@@ -25,9 +26,10 @@
                 ></he-icon>
             </template>
             <template slot="code">
-                <pre v-highlightjs><code class="html">&lt;he-icon
+                <highlightjs language='html' code='<he-icon
     type="excel-download"
-&gt;&lt;/he-icon&gt;</code></pre>
+    class="icon"
+></he-icon>' />
             </template>
         </codeDemo>
         <h3>图片下载图标</h3>
@@ -39,9 +41,10 @@
                 ></he-icon>
             </template>
             <template slot="code">
-                <pre v-highlightjs><code class="html">&lt;he-icon
+                <highlightjs language='html' code='<he-icon
     type="image-download"
-&gt;&lt;/he-icon&gt;</code></pre>
+    class="icon"
+></he-icon>' />
             </template>
         </codeDemo>
         <h3>PDF下载图标</h3>
@@ -53,9 +56,10 @@
                 ></he-icon>
             </template>
             <template slot="code">
-                <pre v-highlightjs><code class="html">&lt;he-icon
+                <highlightjs language='html' code='<he-icon
     type="pdf-download"
-&gt;&lt;/he-icon&gt;</code></pre>
+    class="icon"
+></he-icon>' />
             </template>
         </codeDemo>
         <h3>图片分析图标</h3>
@@ -67,9 +71,10 @@
                 ></he-icon>
             </template>
             <template slot="code">
-                <pre v-highlightjs><code class="html">&lt;he-icon
+                <highlightjs language='html' code='<he-icon
     type="image-analyse"
-&gt;&lt;/he-icon&gt;</code></pre>
+    class="icon"
+></he-icon>' />
             </template>
         </codeDemo>
         <h3>表格分析图标</h3>
@@ -81,9 +86,10 @@
                 ></he-icon>
             </template>
             <template slot="code">
-                <pre v-highlightjs><code class="html">&lt;he-icon
+                <highlightjs language='html' code='<he-icon
     type="excel-analyse"
-&gt;&lt;/he-icon&gt;</code></pre>
+    class="icon"
+></he-icon>' />
             </template>
         </codeDemo>
         <h3>右箭头</h3>
@@ -95,9 +101,10 @@
                 ></he-icon>
             </template>
             <template slot="code">
-                <pre v-highlightjs><code class="html">&lt;he-icon
+                <highlightjs language='html' code='<he-icon
     type="arrow-right"
-&gt;&lt;/he-icon&gt;</code></pre>
+    class="icon"
+></he-icon>' />
             </template>
         </codeDemo>
         <h3>提示</h3>
@@ -109,9 +116,10 @@
                 ></he-icon>
             </template>
             <template slot="code">
-                <pre v-highlightjs><code class="html">&lt;he-icon
+                <highlightjs language='html' code='<he-icon
     type="tip"
-&gt;&lt;/he-icon&gt;</code></pre>
+    class="icon"
+></he-icon>' />
             </template>
         </codeDemo>
     </div>
