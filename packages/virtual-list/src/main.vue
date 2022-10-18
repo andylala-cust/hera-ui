@@ -3,6 +3,7 @@
         class="he-virtual-list"
         @scroll="handleScroll"
         ref="vList"
+        :style="{height: height + 'px'}"
     >
         <div
             :style="{
@@ -35,8 +36,7 @@ export default {
     name: 'HeVirtualList',
     data () {
         return {
-            startIndex: 0,
-            endIndex: VIEW_BOX_SIZE
+            startIndex: 0
         }
     },
     props: {
@@ -54,6 +54,10 @@ export default {
         viewBoxSize: {
             type: Number,
             default: VIEW_BOX_SIZE
+        },
+        height: {
+            type: Number,
+            required: true
         }
     },
     computed: {
@@ -62,6 +66,16 @@ export default {
         },
         viewDataSource () {
             return this.dataSource.slice(this.startIndex, this.endIndex)
+        },
+        limit () {
+            const limit = Math.ceil(this.height / this.rowHeight)
+            if (limit >= this.viewBoxSize) {
+                return limit
+            }
+            return this.viewBoxSize
+        },
+        endIndex () {
+            return Math.min(this.startIndex + this.limit, this.dataSource.length)
         }
     },
     methods: {
@@ -71,8 +85,7 @@ export default {
             const { scrollTop } = vList
             const currentStartIndex = Math.floor(scrollTop / rowHeight)
             if (currentStartIndex !== startIndex) {
-                this.startIndex = currentStartIndex
-                this.endIndex = Math.min(currentStartIndex + this.viewBoxSize, this.dataSource.length)
+                this.startIndex = Math.max(0, currentStartIndex)
             }
         }
     }
