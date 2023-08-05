@@ -1,47 +1,47 @@
 @import "./common/var";
 
-.he-panel-header{
+.he-panel-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 30px;
   padding: 0 9px;
   background-color: @bgColor;
-  .title{
-    h4{
+  .title {
+    h4 {
       font-size: 14px;
       color: @fontColor1;
       line-height: 22px;
       font-weight: bold;
     }
   }
-  .icon-wrap{
+  .icon-wrap {
     display: flex;
     align-items: center;
     color: @fontColor2;
-    i{
+    i {
       display: block;
       width: 16px;
       height: 16px;
       cursor: pointer;
-      transition: all .3s;
-      &:hover{
+      transition: all 0.3s;
+      &:hover {
         color: @mainColor;
       }
     }
-    p{
+    p {
       display: flex;
       align-items: center;
       margin-left: 24px;
       font-size: 14px;
       cursor: pointer;
-      &:hover{
+      &:hover {
         color: @mainColor;
       }
-      &.is-more{
+      &.is-more {
         position: relative;
-        &:before{
-          content: '';
+        &:before {
+          content: "";
           position: absolute;
           left: -12px;
           top: 50%;

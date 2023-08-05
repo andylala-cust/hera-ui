@@ -25,15 +25,18 @@
               "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
             }
           }
-        ],
+        ]
       ],
       "plugins": [
-        ["module-resolver", {
-          "root": ["hera-ui"],
-          "alias": {
-            "hera-ui/src": "hera-ui/lib"
+        [
+          "module-resolver",
+          {
+            "root": ["hera-ui"],
+            "alias": {
+              "hera-ui/src": "hera-ui/lib"
+            }
           }
-        }]
+        ]
       ]
     },
     "test": {
