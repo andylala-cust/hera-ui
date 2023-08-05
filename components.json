@@ -3,5 +3,5 @@
   "panel": "./packages/panel/index.js",
   "panel-content": "./packages/panel-content/index.js",
   "panel-header": "./packages/panel-header/index.js",
-  "virtual-list": "./packages/virtual-list/index.js"
+  "vertical-virtual-list": "./packages/vertical-virtual-list/index.js"
 }

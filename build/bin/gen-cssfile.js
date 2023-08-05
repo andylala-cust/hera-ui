@@ -1,11 +1,9 @@
-var fs = require('fs');
-var path = require('path');
-var Components = require('../../components.json');
-var themes = [
-  'theme-chalk'
-];
+var fs = require("fs");
+var path = require("path");
+var Components = require("../../components.json");
+var themes = ["theme-chalk"];
 Components = Object.keys(Components);
-var basepath = path.resolve(__dirname, '../../packages/');
+var basepath = path.resolve(__dirname, "../../packages/");
 
 function fileExists(filePath) {
   try {
@@ -16,18 +14,21 @@ function fileExists(filePath) {
 }
 
 themes.forEach((theme) => {
-  var isLess = theme !== 'theme-default';
+  var isLess = theme !== "theme-default";
   // var indexContent = isLess ? '@import "./base.less";\n' : '@import "./base.css";\n';
-  var indexContent = '';
-  Components.forEach(function(key) {
+  var indexContent = "";
+  Components.forEach(function (key) {
     // if (['option', 'option-group'].indexOf(key) > -1) return;
-    var fileName = key + (isLess ? '.less' : '.css');
+    var fileName = key + (isLess ? ".less" : ".css");
     indexContent += '@import "./' + fileName + '";\n';
-    var filePath = path.resolve(basepath, theme, 'src', fileName);
+    var filePath = path.resolve(basepath, theme, "src", fileName);
     if (!fileExists(filePath)) {
-      fs.writeFileSync(filePath, '', 'utf8');
-      console.log(theme, ' 创建遗漏的 ', fileName, ' 文件');
+      fs.writeFileSync(filePath, "", "utf8");
+      console.log(theme, " 创建遗漏的 ", fileName, " 文件");
     }
   });
-  fs.writeFileSync(path.resolve(basepath, theme, 'src', isLess ? 'index.less' : 'index.css'), indexContent);
+  fs.writeFileSync(
+    path.resolve(basepath, theme, "src", isLess ? "index.less" : "index.css"),
+    indexContent
+  );
 });

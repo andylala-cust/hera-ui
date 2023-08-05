@@ -1,7 +1,7 @@
-import Panelcontent from '../panel/src/panel-content'
+import Panelcontent from "../panel/src/panel-content";
 
-Panelcontent.install = function(Vue) {
-  Vue.component(Panelcontent.name, Panelcontent)
-}
+Panelcontent.install = function (Vue) {
+  Vue.component(Panelcontent.name, Panelcontent);
+};
 
-export default Panelcontent
+export default Panelcontent;

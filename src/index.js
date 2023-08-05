@@ -3,14 +3,14 @@ import Icon from '../packages/icon/index.js'
 import Panel from '../packages/panel/index.js'
 import PanelContent from '../packages/panel-content/index.js'
 import PanelHeader from '../packages/panel-header/index.js'
-import VirtualList from '../packages/virtual-list/index.js'
+import VerticalVirtualList from '../packages/vertical-virtual-list/index.js'
 
 const components = [
   Icon,
   Panel,
   PanelContent,
   PanelHeader,
-  VirtualList
+  VerticalVirtualList
 ]
 
 const install = function(Vue, opts = {}) {
@@ -30,5 +30,5 @@ export default {
   Panel,
   PanelContent,
   PanelHeader,
-  VirtualList
+  VerticalVirtualList
 }

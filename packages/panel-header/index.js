@@ -1,7 +1,7 @@
-import Panelheader from '../panel/src/panel-header'
+import Panelheader from "../panel/src/panel-header";
 
-Panelheader.install = function(Vue) {
-  Vue.component(Panelheader.name, Panelheader)
-}
+Panelheader.install = function (Vue) {
+  Vue.component(Panelheader.name, Panelheader);
+};
 
-export default Panelheader
+export default Panelheader;
