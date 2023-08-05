@@ -1,37 +1,37 @@
-const path = require('path');
-const ProgressBarPlugin = require('progress-bar-webpack-plugin');
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const path = require("path");
+const ProgressBarPlugin = require("progress-bar-webpack-plugin");
+const VueLoaderPlugin = require("vue-loader/lib/plugin");
 
-const config = require('./config');
+const config = require("./config");
 
 module.exports = {
-  mode: 'production',
+  mode: "production",
   entry: {
-    app: ['./src/index.js']
+    app: ["./src/index.js"],
   },
   output: {
-    path: path.resolve(process.cwd(), './lib'),
-    publicPath: '/dist/',
-    filename: 'hera-ui.common.js',
-    chunkFilename: '[id].js',
-    libraryExport: 'default',
-    library: 'HERAUI',
-    libraryTarget: 'commonjs2'
+    path: path.resolve(process.cwd(), "./lib"),
+    publicPath: "/dist/",
+    filename: "hera-ui.common.js",
+    chunkFilename: "[id].js",
+    libraryExport: "default",
+    library: "HERAUI",
+    libraryTarget: "commonjs2",
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: [".js", ".vue", ".json"],
     alias: config.alias,
-    modules: ['node_modules']
+    modules: ["node_modules"],
   },
   externals: config.externals,
   performance: {
-    hints: false
+    hints: false,
   },
   stats: {
-    children: false
+    children: false,
   },
   optimization: {
-    minimize: false
+    minimize: false,
   },
   module: {
     rules: [
@@ -39,33 +39,30 @@ module.exports = {
         test: /\.(jsx?|babel|es6)$/,
         include: process.cwd(),
         exclude: config.jsexclude,
-        loader: 'babel-loader'
+        loader: "babel-loader",
       },
       {
         test: /\.vue$/,
-        loader: 'vue-loader',
+        loader: "vue-loader",
         options: {
           compilerOptions: {
-            preserveWhitespace: false
-          }
-        }
+            preserveWhitespace: false,
+          },
+        },
       },
       {
         test: /\.css$/,
-        loaders: ['style-loader', 'css-loader']
+        loaders: ["style-loader", "css-loader"],
       },
       {
         test: /\.(svg|otf|ttf|woff2?|eot|gif|png|jpe?g)(\?\S*)?$/,
-        loader: 'url-loader',
+        loader: "url-loader",
         query: {
           limit: 10000,
-          name: path.posix.join('static', '[name].[hash:7].[ext]')
-        }
-      }
-    ]
+          name: path.posix.join("static", "[name].[hash:7].[ext]"),
+        },
+      },
+    ],
   },
-  plugins: [
-    new ProgressBarPlugin(),
-    new VueLoaderPlugin()
-  ]
+  plugins: [new ProgressBarPlugin(), new VueLoaderPlugin()],
 };

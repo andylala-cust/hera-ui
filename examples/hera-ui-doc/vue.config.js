@@ -1,9 +1,9 @@
 module.exports = {
-    configureWebpack: {
-        resolve: {
-            alias: {
-                main: "../../../"
-            }
-        }
-    }
-}
+  configureWebpack: {
+    resolve: {
+      alias: {
+        main: "../../../",
+      },
+    },
+  },
+};

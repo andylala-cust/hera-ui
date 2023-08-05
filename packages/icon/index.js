@@ -1,7 +1,7 @@
-import Icon from './src/main.jsx'
+import Icon from "./src/main.jsx";
 
-Icon.install = function(Vue) {
-  Vue.component(Icon.name, Icon)
-}
+Icon.install = function (Vue) {
+  Vue.component(Icon.name, Icon);
+};
 
-export default Icon
+export default Icon;
